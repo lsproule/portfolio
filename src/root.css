@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,700&family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sky-900{
+  background: rgba(7, 89, 133, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(7, 89, 133, 0.37);
+}
+
+.font-bold{
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Montserrat" sans;
+}
+.text-bg{
+  color:  #272727
+}
+.glass{
+  /* From https://css.glass */
+border: 1px solid rgba(187, 187, 187, 0.37);
+
+}
+:root{
+  background-color: #272727;
+ /*   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+*/
+  --bg: #272727;
+  }
+
+.pasifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.slide {
+  color: text;
+
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+main{
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: inherit;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-family: Montserrat ; 
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+main{
+  @apply ml-2;
+  scroll-behavior: smooth;
+}
+
+html, body, main {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+  @apply w-2;
+  background: transparent;
+  color: #22c55e
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-green-500 ;
+  border-radius: 100px;
+}
+
+
+
+body {
+  @apply grid h-screen w-screen;
+  grid-template-rows: 4rem 1fr ;
+  grid-template-areas: 
+  "header"
+  "main"
+}
+
+header {
+  @apply bg-gray-200;
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
