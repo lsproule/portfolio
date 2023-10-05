@@ -6,4 +6,7 @@ export default defineConfig({
   ssr: {
     noExternal: ['solid-slider'],
   },
+  build:{
+    outDir: '.output',
+  }
 });

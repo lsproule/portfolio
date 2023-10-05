@@ -47,7 +47,7 @@ const Project = ({title, description, image, ...props }:Project) => {
 export const Projects = () => {
 
   slider;
-  return (<section class="  p-3 ">
+  return (<section id="projects" class="  p-3 ">
     <Container class="h-full ">
       <div class="flex items-center mt-4 justify-center text-xl font-bold mb-3 text-green-500">
         <FaSolidSuitcase class="mr-2" /> Personal Projects
