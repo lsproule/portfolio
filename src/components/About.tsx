@@ -11,6 +11,8 @@ export const About = () => {
             <img src="/profile.jpeg" class="max-h-full object-contain rounded-lg" />
           </div>
           <div class="w-full text-sm text-center md:text-left">
+
+          I'm a devoted DevOps/SRE engineer with a love for containerization, coupled with a profound fascination for a multitude of programming languages. My insatiable curiosity is my driving force, continually propelling me towards mastering new technologies and optimizing system performance.
             I'm a tech enthusiast with a passion for travel and a knack for problem-solving
             through code. Fluent in Spanish, I enjoy connecting with diverse cultures. My tech journey began in a data science bootcamp,
             igniting my love for coding. When I'm not exploring new destinations – by the way, I use Neovim
