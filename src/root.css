@@ -100,6 +100,9 @@ body {
   "header"
   "main"
 }
+.modal {
+  z-index: 9999;
+}
 
 header {
   @apply bg-gray-200;
@@ -108,5 +111,6 @@ header {
 
 main {
   grid-area: main;
+  z-index: 1;
 }
 
