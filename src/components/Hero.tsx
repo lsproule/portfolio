@@ -22,7 +22,7 @@ export const Hero = () => {
         <div class="rounded-l-xl text-center  justify-center p-3">
           <Motion.div
             {...Appear}
-            class="font-bold bg-green-600 w-auto text-lg md:text-3xl px-3 rounded text-bg"
+            class="font-bold bg-green-600 w-auto text-lg md:text-3xl px-3 py-1 rounded text-bg"
           >
             <Motion.span
               class="text-primary"
