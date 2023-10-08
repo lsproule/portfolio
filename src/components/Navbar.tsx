@@ -11,6 +11,7 @@ const MotionProps = {
   animate: {
     opacity: 1,
     x: 0,
+    zIndex: 0,
   },
   transition: {
     duration: 0.5,
@@ -23,8 +24,8 @@ type ModalProps = {
 
 const Modal = ({ setShow }: ModalProps) => {
   return (
-    <div id="modal" class="fixed top-0  left-0  h-screen w-full  bg-black bg-opacity-50 modal z-50">
-      <div id="modal" class="bg-green-600 z-50 text-bg w-1/2 h-screen">
+    <div id="modal" class="fixed top-0 modal  left-0  h-screen w-full  bg-black bg-opacity-50   z-[999]">
+      <div id="modal" class="bg-green-600 modal fixed z-[999] text-bg w-1/2 h-screen">
         <div class="flex items-center justify-between p-3">
           <A href="#hero" class="text-2xl pasifico font-bold">Lucas Sproule</A>
           <button onClick={() => setShow(false)}>Close</button>

@@ -44,6 +44,9 @@ html {
   box-sizing: border-box;
 
 }
+*{
+  z-index: 0;
+}
 
 main{
   scroll-behavior: smooth;
@@ -61,10 +64,7 @@ img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
+
 
 #root, #__next {
   isolation: isolate;
@@ -89,7 +89,13 @@ html, body, main {
   border-radius: 100px;
 }
 
-
+body {
+  z-index: -2;
+}
+main, section{
+  @apply relative;
+  z-index: -1;
+}
 
 body {
   @apply relative grid  w-screen;
@@ -100,8 +106,10 @@ body {
   "header"
   "main"
 }
-#modal {
-  z-index: 9999;
+.modal {
+  position: fixed !important;
+  height: 100vh;
+  z-index: 99999 !important;
 }
 
 
