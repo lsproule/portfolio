@@ -103,8 +103,16 @@ body {
 #modal {
   z-index: 9999;
 }
+nav {
+  z-index: 999;
+}
+span, button, div{
+  z-index: -1;
+}
 
-
+body {
+  z-index: -999;
+}
 
 
 header {
