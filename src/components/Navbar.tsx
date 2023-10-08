@@ -23,7 +23,7 @@ type ModalProps = {
 
 const Modal = ({ setShow }: ModalProps) => {
   return (
-    <div class={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50`}>
+    <div class="fixed top-0 left-0 h-full w-full  bg-black bg-opacity-50 z-50">
       <div class="bg-green-600 text-bg w-1/2 h-full">
         <div class="flex items-center justify-between p-3">
           <A href="#hero" class="text-2xl pasifico font-bold">Lucas Sproule</A>
