@@ -104,7 +104,7 @@ body {
   @apply z-50
 }
 section{
-  @apply relative z-50;
+  @apply relative -z-10;
 }
 
 header {
