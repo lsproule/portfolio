@@ -100,9 +100,11 @@ body {
   "header"
   "main"
 }
-.modal {
+#modal {
   z-index: 9999;
 }
+
+
 
 
 header {
@@ -112,6 +114,5 @@ header {
 
 main {
   grid-area: main;
-  z-index: 0;
 }
 
