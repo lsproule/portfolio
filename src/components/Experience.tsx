@@ -92,8 +92,8 @@ const Job = ({ company, title, start, end, responsibilities }: JobProps) => {
         <div>{start}-{end}</div>
       </div>
       <div>
-        <div class="flex items-center gap-2"><FaSolidListCheck class="text-green-500 text-xl" /> Responsibilities:</div>
-        <div class=" p-0 md:p-5 text-sm text-center text-balance">
+        <div class="flex mb-2 items-center gap-2"><FaSolidListCheck class="text-green-500 text-xl" /> Responsibilities:</div>
+        <div class=" p-0 md:p-5 text-sm  ">
           {responsibilities}
         </div>
       </div>
