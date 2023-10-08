@@ -92,7 +92,7 @@ html, body, main {
 
 
 body {
-  @apply grid  w-screen;
+  @apply relative grid  w-screen;
   height: 100vh;
   height: 100dvh;
   grid-template-rows: 4rem 1fr ;
@@ -102,16 +102,6 @@ body {
 }
 #modal {
   z-index: 9999;
-}
-nav {
-  z-index: 999;
-}
-span, button, div{
-  z-index: -1;
-}
-
-body {
-  z-index: -999;
 }
 
 
