@@ -101,7 +101,10 @@ body {
   "main"
 }
 .modal {
-  z-index: 9999;
+  @apply z-50
+}
+section{
+  @apply z-10;
 }
 
 header {

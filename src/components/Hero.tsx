@@ -16,7 +16,7 @@ export const Hero = () => {
     }
   }
   return (
-    <section id="hero" class=" p-3  h-full mb-5">
+    <section id="hero" class=" p-3 -z-10  h-full mb-5">
 
       <Container class="flex flex-col h-full items-center justify-center ">
         <div class="rounded-l-xl text-center  justify-center p-3">
