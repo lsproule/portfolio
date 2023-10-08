@@ -46,10 +46,10 @@ export const Hero = () => {
           I have a deep passion for DevOps and SRE practices, with a strong affinity for CI/CD, Monitoring, Kubernetes, and GitOps methodologies.
 
         </Motion.p>
-        <Motion.button {...Appear}
+        <Motion.a href="#projects" {...Appear}
           class="rounded-lg p-2 font-semibold text-green-500 tracking-wide  border border-green-700 hover:border-[var(--bg)]  hover:text-[var(--bg)] hover:bg-green-500">
           Check out  my work
-        </Motion.button>
+        </Motion.a>
       </Container>
     </section>
   )
