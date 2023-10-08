@@ -101,11 +101,9 @@ body {
   "main"
 }
 .modal {
-  @apply z-50
+  z-index: 9999;
 }
-section{
-  @apply relative z-10;
-}
+
 
 header {
   @apply bg-gray-200;
