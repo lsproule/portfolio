@@ -16,16 +16,17 @@ type JobProps = {
   end: string,
   responsibilities: string
 }
-const CurrentJobData: JobProps = {
-  company: "Deloitte",
-  title: "SRE",
-  start: "Jan 2022",
-  end: "Present",
-  responsibilities: "Contracting through Deloitte for TikTok, I managed Golang service deployments and addressed monitor resets, actively contributing to the resolution of this critical issue. I streamlined Helm chart updates and service releases via our CI/CD platform, optimizing operational efficiency. Furthermore, I designed a user-friendly Kubernetes interface that displayed custom service mesh metrics, facilitating early warning analysis."
 
-}
 
 const Jobs: JobProps[] = [
+  {
+    company: "Deloitte",
+    title: "SRE",
+    start: "Jan 2022",
+    end: "Present",
+    responsibilities: "Contracting through Deloitte for TikTok, I managed Golang service deployments and addressed monitor resets, actively contributing to the resolution of this critical issue. I streamlined Helm chart updates and service releases via our CI/CD platform, optimizing operational efficiency. Furthermore, I designed a user-friendly Kubernetes interface that displayed custom service mesh metrics, facilitating early warning analysis."
+
+  },
   {
     company: "Blue Apron",
     title: "SRE",
@@ -77,7 +78,7 @@ const CurrentJob = ({ company, title, start, responsibilities }: JobProps) => {
 
 const Job = ({ company, title, start, end, responsibilities }: JobProps) => {
   return (
-    <div class="flex   w-full border rounded    border-green-500 flex-col justify-center items-start p-3">
+    <div class="flex   w-1/2 border rounded    border-green-500 flex-col justify-center items-start p-3">
       <div class="flex items-center font-extrabold text-xl gap-2">
         <FaRegularBuilding class="text-green-500" /><div>{company}</div>
 
@@ -99,16 +100,12 @@ const Job = ({ company, title, start, end, responsibilities }: JobProps) => {
     </div>
   )
 }
-const [slider,] = createSlider({ mode: "free-snap", });
 
 
-slider
 export const Experience = () => {
-  let ref: HTMLElement | undefined;
+  const [slider,] = createSlider({ mode: "free-snap", });
 
-  onMount(() => {
-    slider(ref as HTMLElement);
-  });
+  slider
   return (
     <section id="experience" class=" h-auto p-3 "
 
@@ -118,15 +115,13 @@ export const Experience = () => {
           <FaSolidSuitcase class="mr-2" /> Experience
 
         </div>
-        <div ref={ref as HTMLDivElement} class="flex md:hidden  mx-4 gap-2" use:slider>
+        <div class="flex md:hidden  mx-4 gap-2" use:slider>
 
-          <CurrentJob {...CurrentJobData} />
           <For each={Jobs}>
             {(job) => <Job {...job} />}
           </For>
         </div>
-        <div class="hidden md:grid gap-2 grid-cols-2">
-          <CurrentJob {...CurrentJobData} />
+        <div class="hidden md:grid gap-2 w-auto grid-cols-2">
           <For each={Jobs}>
             {(job) => <Job  {...job} />}
           </For>
