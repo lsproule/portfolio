@@ -16,6 +16,9 @@
   letter-spacing: 1px;
   font-family: "Montserrat" sans;
 }
+.bg-primary{
+  background-color: #272727;
+}
 .text-bg{
   color:  #272727
 }
@@ -95,6 +98,9 @@ body {
 main, section{
   @apply relative;
   z-index: -1;
+}
+.lh {
+  line-height: 12rem;
 }
 
 body {

@@ -17,7 +17,6 @@ type JobProps = {
   responsibilities: string
 }
 
-
 const Jobs: JobProps[] = [
   {
     company: "Deloitte",
@@ -53,7 +52,7 @@ in the cloud which led to massive savings. `
 
 const CurrentJob = ({ company, title, start, responsibilities }: JobProps) => {
   return (
-    <div class="flex   w-full  rounded text-bg bg-green-700 flex-col justify-center items-start p-3">
+    <div class="flex w-full rounded text-bg bg-green-700 flex-col justify-center items-start p-3">
       <div class="flex items-center font-extrabold  text-2xl gap-2">
         <FaRegularBuilding class="text-xl" /><div>{company}</div>
 
@@ -78,7 +77,7 @@ const CurrentJob = ({ company, title, start, responsibilities }: JobProps) => {
 
 const Job = ({ company, title, start, end, responsibilities }: JobProps) => {
   return (
-    <div class="flex   w-1/2 border rounded    border-green-500 flex-col justify-center items-start p-3">
+    <div class="flex    border rounded    border-green-500 flex-col justify-center items-start p-3">
       <div class="flex items-center font-extrabold text-xl gap-2">
         <FaRegularBuilding class="text-green-500" /><div>{company}</div>
 
