@@ -54,9 +54,9 @@ in the cloud which led to massive savings. `
 
 const Job = ({ company, title, start, end, responsibilities }: JobProps) => {
   return (
-    <div class="md:grid md:grid-cols-9   rounded  bg-neutral-950 shadow-lg shadow-gray-950   flex-col justify-center items-start p-3">
-      <div class="md:col-span-3 mb-12 h-full pl-8  flex flex-col justify-center gap-2">
-        <div class="flex   text-white text-xl  items-center gap-2">
+    <div class="md:grid md:grid-cols-9 flex  rounded  bg-neutral-950 shadow-lg shadow-gray-950   flex-col justify-center items-start p-3">
+      <div class="md:col-span-3 md:mb-12 h-full md:pl-8  flex flex-col justify-center gap-2">
+        <div class="flex text-white text-xl mt-10  items-center gap-2">
           <FaSolidLaptop class="text-green-500" /> <div>{title}</div>
 
         </div> <div class="flex items-center font-extrabold text-lg gap-2">
@@ -69,7 +69,7 @@ const Job = ({ company, title, start, end, responsibilities }: JobProps) => {
           <div class="text-sm text-neutral-500">{start}-{end}</div>
         </div>
       </div>
-      <div class="col-span-5 mb-12">
+      <div class="md:col-span-5 mb-12">
         <div class="flex mt-8 mb-4 items-center gap-2"><FaSolidListCheck class="text-green-500 text-xl" /> Responsibilities:</div>
         <div class=" p-0 text-sm text-neutral-300 ">
           {responsibilities}
@@ -85,12 +85,12 @@ export const Experience = () => {
 
   slider
   return (
-    <section id="experience" class="bg-neutral-900 h-auto p-3 "
+    <section id="experience" class="bg-neutral-900 lg:px-20 h-auto p-3 "
 
     >
-      <Container class="overflow-x-clip mb-20   p-3">
-        <div class="flex items-center pl-14  text-2xl font-bold mb-3 text-green-500">
-          <FaSolidSuitcase class="mr-4" /> Experience
+      <Container class="overflow-x-clip  mb-20   p-3">
+        <div class="flex items-center pl-14  text-2xl font-bold mb-3 ">
+          <FaSolidSuitcase class="mr-4 text-green-500" /> Experience
 
         </div>
         <div class="flex md:hidden  mx-4 gap-2" use:slider>

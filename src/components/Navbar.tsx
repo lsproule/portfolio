@@ -48,7 +48,7 @@ export const Navbar = () => {
     path == location.pathname + location.hash
       ? "text-green-500"
       : " border-none transtion-all duration-500 hover:border-red-500";
-  return <div><Motion.nav {...MotionProps} class=" bg-neutral-950 shadow shadow-gray-900 opacity-10 py-4  px-4 flex">
+  return <div><Motion.nav {...MotionProps} class=" bg-neutral-950 shadow shadow-gray-900 opacity-10  py-4  px-4 flex">
     <A class="flex items-center " href="#hero">
       <div class="text-green-500 pasifico mb-2 ml-8  text-2xl font-bold">
         Lucas Sproule

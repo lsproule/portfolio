@@ -42,9 +42,9 @@ inView("div", ({ target }) => {
       delay: stagger(1),
     }
   )
-//  return (leave) => animate(leave.target, {
-//    opacity: [1, 0],
-//    x: [0, 100]
-//  })
+  return (leave) => animate(leave.target, {
+    opacity: [1, 0],
+    x: [0, 100]
+  })
 })
 mount(() => <StartClient />, document);

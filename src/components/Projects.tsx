@@ -14,7 +14,7 @@ type Project = {
 const projects = [
   {
     title: "Embedding Neovim into the browser",
-    description: "I wanted to practice with file descriptors and websockts, so I built this project to pass stdio through a socket. I built it with javascript and python. I isolated my neovim with docker to build the user interface",
+    description: "I wanted to practice with file descriptors and websockets, so I built this project to pass stdio through a socket. I built it with javascript and python. I isolated my neovim with docker to build the user interface",
     image: "/nvim.png"
 
   },

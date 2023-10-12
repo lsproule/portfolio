@@ -28,7 +28,7 @@ export const Hero = () => {
               class="text-primary"
               {...Appear}
             >
-              Hello, I'm <span class="text-3xl font-bold  ">Lucas Sproule</span>
+              Hello, I'm <span class="text-xl md:text-3xl font-bold  ">Lucas Sproule</span>
             </Motion.span>
           </Motion.div>
           <div class="text-md mt-4 md:text-xl  ">A

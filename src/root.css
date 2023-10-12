@@ -42,6 +42,14 @@ border: 1px solid rgba(187, 187, 187, 0.37);
   color: text;
 
 }
+.text-balance{
+  text-wrap: balance;
+}
+
+textarea {
+
+  form-sizing: content !important;
+}
 
 html {
   box-sizing: border-box;
@@ -85,11 +93,13 @@ html, body, main {
 ::-webkit-scrollbar {
   @apply w-2;
   background: transparent;
-  color: #22c55e
+  color: #22c55e;
+  width: 3px;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-green-500 ;
   border-radius: 100px;
+  width: 3px;
 }
 
 body {
