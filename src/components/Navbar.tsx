@@ -48,16 +48,16 @@ export const Navbar = () => {
     path == location.pathname + location.hash
       ? "text-green-500"
       : " border-none transtion-all duration-500 hover:border-red-500";
-  return <div><Motion.nav {...MotionProps} class="border-b bg-primary py-4  px-4 border-white flex">
+  return <div><Motion.nav {...MotionProps} class=" bg-neutral-950 shadow shadow-gray-900 opacity-10 py-4  px-4 flex">
     <A class="flex items-center " href="#hero">
-      <div class="text-green-500 pasifico  text-2xl font-bold">
+      <div class="text-green-500 pasifico mb-2 ml-8  text-2xl font-bold">
         Lucas Sproule
       </div>
     </A>
     <div class="ml-auto flex items-center">
       <button onClick={() => { setModal((prev) => !prev) }}><FaSolidBars class="text-2xl text-green-500 md:hidden" /></button>
     </div>
-    <ul class="ml-auto hidden md:flex items-center  gap-x-4  text-lg  text-gray-200">
+    <ul class="ml-auto hidden md:flex items-center  gap-x-8 pr-8 text-lg  text-gray-200">
       <li class={` ${active("/#experience")} `}>
         <A class="font-bold" href="#experience">Experience</A>
       </li>

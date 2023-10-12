@@ -8,8 +8,8 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(7, 89, 133, 0.37);
 }
+
 
 .font-bold{
   font-weight: 800;
@@ -28,7 +28,7 @@ border: 1px solid rgba(187, 187, 187, 0.37);
 
 }
 :root{
-  background-color: #272727;
+  background-color: #111111;
  /*   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 */
   --bg: #272727;

@@ -28,10 +28,10 @@ export const Hero = () => {
               class="text-primary"
               {...Appear}
             >
-              Hello, I'm <span class=" pasifico drop-shadow  text-2xl  ">Lucas Sproule</span>
+              Hello, I'm <span class="text-3xl font-bold  ">Lucas Sproule</span>
             </Motion.span>
           </Motion.div>
-          <div class="text-md md:text-xl  ">A
+          <div class="text-md mt-4 md:text-xl  ">A
             <Motion.span {...Appear} class="font-bold text-green-500"> Site Reliability </Motion.span>
             Engineer
 
@@ -40,14 +40,14 @@ export const Hero = () => {
         </div>
         <Motion.p
           {...Appear}
-          class="text-center text-gray-300 md:mx-24 lg:mx-48 text-balance border-none mb-3"
+          class="text-center text-gray-300 px-4  md:w-1/2 mb-4 lg:w-2/5 text-balance border-none"
         >
 
           I have a deep passion for DevOps and SRE practices, with a strong affinity for CI/CD, Monitoring, Kubernetes, and GitOps methodologies.
 
         </Motion.p>
         <Motion.a href="#projects" {...Appear}
-          class="rounded-lg p-2 font-semibold text-green-500 tracking-wide  border border-green-700 hover:border-[var(--bg)]  hover:text-[var(--bg)] hover:bg-green-500">
+          class="rounded-lg p-2 font-semibold text-green-500 tracking-wide px-4 border border-green-700 hover:border-[var(--bg)]  hover:text-[var(--bg)] hover:bg-green-500">
           Check out  my work
         </Motion.a>
       </Container>
