@@ -42,8 +42,8 @@ export const Projects = () => {
   return (
     <section id="projects" class="bg-neutral-900 h-screen  p-3 ">
       <Container class="h-full ">
-        <div class="flex items-center mt-4 justify-center text-xl font-bold mb-3 text-green-500">
-          <FaSolidSuitcase class="mr-2" /> Personal Projects
+        <div class="flex items-center mt-4 ml-6 text-xl font-bold mb-3 text-white">
+          <FaSolidSuitcase class="mr-2  text-green-500" /> Personal Projects
         </div>
         <div class="hidden mt-20 gap-8 p-3 w-full lg:grid grid-cols-2 " use:slider>
           <For each={projects}>

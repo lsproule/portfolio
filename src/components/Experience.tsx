@@ -85,11 +85,11 @@ export const Experience = () => {
 
   slider
   return (
-    <section id="experience" class="bg-neutral-900 lg:px-20 h-auto p-3 "
+    <section id="experience" class="bg-neutral-900 mb-20 lg:px-20 h-auto p-3 "
 
     >
       <Container class="overflow-x-clip  mb-20   p-3">
-        <div class="flex items-center pl-14  text-2xl font-bold mb-3 ">
+        <div class="flex items-center pl-14 my-10 md:pb-10  text-2xl font-bold ">
           <FaSolidSuitcase class="mr-4 text-green-500" /> Experience
 
         </div>
