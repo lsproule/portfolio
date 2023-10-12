@@ -15,7 +15,7 @@ export const Contact = () => {
             </div>
             <input class="border w-full bg-white border-green-500 rounded-xl p-2 px-3 ml-2" type="text" placeholder="email" />
             <input class="border w-full bg-white border-green-500 rounded-xl p-2 px-3 ml-2" type="text" placeholder="name" />
-            <textarea class="border w-full inline-block align-text-top border-green-500 rounded-xl  pt-2  px-3  ml-2" placeholder="message" />
+            <textarea class="border w-full h-48  align-text-top border-green-500 rounded-xl  pt-2  px-3  ml-2" placeholder="message" />
             <button class="border text-green-500 border-green-500 rounded-xl p-2 px-3 ml-2">Send</button>
           </div>
         </div>
