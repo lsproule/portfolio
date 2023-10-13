@@ -7,7 +7,7 @@ import {
 } from 'solid-icons/fa'
 import { Container } from './Container'
 import { createSlider, Slider } from "solid-slider"
-import { onMount, For } from 'solid-js'
+import {  For } from 'solid-js'
 
 type JobProps = {
   company: string,
@@ -53,6 +53,7 @@ in the cloud which led to massive savings. `
 
 
 const Job = ({ company, title, start, end, responsibilities }: JobProps) => {
+  
   return (
     <div class="md:grid md:grid-cols-9 flex  rounded  bg-neutral-950 shadow-lg shadow-gray-950   flex-col justify-center items-start p-3">
       <div class="md:col-span-3 md:mb-12 h-full md:pl-8  flex flex-col justify-center gap-2">
@@ -104,8 +105,6 @@ export const Experience = () => {
             {(job) => <Job  {...job} />}
           </For>
         </div>
-
-
       </Container>
     </section>
 
