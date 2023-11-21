@@ -86,7 +86,7 @@ export const Experience = () => {
 
   slider
   return (
-    <section id="experience" class="bg-neutral-900 mb-20 lg:px-20 h-auto p-3 "
+    <section id="experience" class="bg-neutral-900 mb-20 mx-auto lg:w-4/5 h-auto p-3 "
 
     >
       <Container class="overflow-x-clip  mb-20   p-3">

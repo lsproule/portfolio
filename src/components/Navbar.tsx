@@ -54,9 +54,9 @@ export const Navbar = () => {
         Lucas Sproule
       </div>
     </A>
-    <div class="ml-auto flex items-center">
+    <span class="ml-auto flex items-center">
       <button onClick={() => { setModal((prev) => !prev) }}><FaSolidBars class="text-2xl text-green-500 md:hidden" /></button>
-    </div>
+    </span>
     <ul class="ml-auto hidden md:flex items-center  gap-x-8 pr-8 text-lg  text-gray-200">
       <li class={` ${active("/#experience")} `}>
         <A class="font-bold" href="#experience">Experience</A>
