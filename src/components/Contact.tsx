@@ -4,7 +4,7 @@ import { Input } from "~/Library";
 
 export const Contact = () => {
   return (
-    <section id="contact" class="mb-8 h-full p-3 ">
+    <section id="contact" class="mb-8  p-3 ">
       <Container class="  ">
         <div class="flex   justify-center">
           <div class="flex p-4 mb-8 rounded-lg  w-full text-black md:w-1/2 lg:w-1/3 bg-neutral-800  flex-col mt-12 gap-4 items-center  justify-center text-xl font-bold  ">

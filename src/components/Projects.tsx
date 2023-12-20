@@ -31,10 +31,15 @@ const projects = [
 ]
 const Project = ({ title, description, image, ...props }: Project) => {
   return (
-    <div  class={`slide p-5 shadow-md shadow-neutral-900 px-5 bg-neutral-800  text-center rounded-xl  ${props.class}`}>
+    <div  class={`slide flex flex-col justify-around  p-2 pt-5 shadow-md shadow-neutral-900  bg-neutral-800  text-center rounded-xl  ${props.class}`}>
       <img src={image} class="text-xl w-full  font-bold" />
-      <div class="text-2xl my-8 mb-2 font-bold">{title}</div>
-      <div class="  text-muted">{description}</div>
+      <div class="text-2xl my-4 mb-2 font-bold">{title}</div>
+      <div class=" text-muted">{description}</div>
+      <div class="my-4 ">
+        <button class="text-green-500 hover:text-green-700">
+          See more
+        </button>
+      </div>
     </div>
   )
 }
@@ -44,12 +49,12 @@ export const Projects = () => {
 
   slider;
   return (
-    <section id="projects" class="lg:w-5/6 mx-auto bg-neutral-900   ">
+    <section id="projects" class="lg:w-5/6 py-8 mx-auto bg-neutral-900   ">
       <Container class="h-full ">
         <div class="flex items-center mt-4 ml-6 text-xl font-bold mb-3 text-white">
           <FaSolidSuitcase class="mr-2  text-green-500" /> Personal Projects
         </div>
-        <div class="hidden mt-20 gap-8 p-3 w-full lg:grid grid-cols-2 " use:slider>
+        <div class="hidden  gap-8 p-3 w-full lg:grid grid-cols-2 " use:slider>
           <For each={projects}>
             {(project) => <Project {...project} class={``} />}
           </For>

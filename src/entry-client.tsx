@@ -31,7 +31,7 @@ inView(".slide", ({ target }) => {
 })
 
 
-inView("div", ({ target }) => {
+inView("#animate", ({ target }) => {
   animate(target,
     {
       opacity: [0, 1],
