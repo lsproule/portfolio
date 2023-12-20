@@ -48,7 +48,7 @@ const Project = ({ title, description, image, info, ...props }: Project) => {
       {isProjectFullscreen(title) && 
         <Portal target={document.querySelector("body")}>
           <div class="fixed inset-4 lg:inset-6 z-50" onClick={()=>toggleFullscreen(title)}>
-            <img src={image} class="w-full h-full object-cover" />
+            <img src={image} class="w-full h-full object-contain" />
           </div>
         </Portal>
       }
