@@ -52,7 +52,7 @@ const Project = ({ title, description, image, info, ...props }: Project) => {
           </div>
         </Portal>
       }
-      <img onClick={()=>toggleFullscreen(title)} src={image} class={ "w-full"} />
+      <img onClick={()=>toggleFullscreen(title)} src={image} class="w-full max-h-96 object-contain" />
       <div class="text-2xl my-4 mb-2 font-bold">{title}</div>
       <div class=" text-muted">{description}</div>
       <div class="my-4 ">

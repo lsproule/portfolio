@@ -1,0 +1,35 @@
+.parallax{
+    --speed: 1;
+    position: relative;
+    z-index: -10;
+    display: grid;
+    grid-template-areas: "stack";
+    max-height: 100vh;
+}
+.parallax > * {
+    grid-area: stack;
+    animation: parallax linear;
+    animation-timeline: scroll();
+}
+
+.para-header{
+  --speed: 13;
+  font-family: Arial;
+}
+.para-logo {
+  --speed: 11;
+}
+.para-desc {
+  --speed: 12;
+}
+.parallax-bg {
+    object-fit: cover;
+    z-index: -10;
+    filter: blur(10px);
+}
+
+@keyframes parallax {
+    to {
+        transform: translateY(calc(var(--speed) * 100px));
+    }
+}
