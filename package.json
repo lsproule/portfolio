@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "scripts": {
-    "dev": "solid-start dev",
+    "dev": "solid-start dev --host=0.0.0.0",
     "build": "solid-start build",
     "start": "solid-start start"
   },

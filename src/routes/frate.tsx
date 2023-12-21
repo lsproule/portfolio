@@ -16,7 +16,7 @@ export default function Frate() {
         </div>
         <img src="/fratelogo.svg" class="w-36 para-logo text-white mt-20 mx-auto" />
         <div class="text-2xl text-white para-desc flex items-center justify-center">
-          <div class="rounded-lg font-semibold text-center p-2">
+          <div class="rounded-lg mt-20 md:mt-0 text-center p-2">
             A modern C++ package manager inspired heavily by cargo
           </div>
         </div>

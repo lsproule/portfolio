@@ -10,6 +10,7 @@
     grid-area: stack;
     animation: parallax linear;
     animation-timeline: scroll();
+    
 }
 .para-logo {
   --speed: 10.5;
