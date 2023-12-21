@@ -25,7 +25,7 @@ type ModalProps = {
 const Modal = ({ setShow }: ModalProps) => {
   return (
     <div id="modal" class="fixed top-0 modal  left-0  h-screen w-full  bg-black bg-opacity-50   z-[999]">
-      <div id="modal" class="bg-green-600 modal right-0 fixed z-[999] text-bg w-2/3 h-screen">
+      <div id="modal" class="bg-neutral-800 modal right-0 fixed z-[999] text-green-500 w-2/3 h-screen">
         <div class="flex items-center justify-between p-3">
           <A href="#hero" class="text-xl pasifico font-bold">Lucas Sproule</A>
           <button onClick={() => setShow(false)}>Close</button>

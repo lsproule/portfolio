@@ -11,16 +11,16 @@
     animation: parallax linear;
     animation-timeline: scroll();
 }
-
+.para-logo {
+  --speed: 10.5;
+}
 .para-header{
-  --speed: 13;
+  --speed: 10.5;
   font-family: Arial;
 }
-.para-logo {
-  --speed: 11;
-}
+
 .para-desc {
-  --speed: 12;
+  --speed: 9;
 }
 .parallax-bg {
     object-fit: cover;
@@ -30,6 +30,6 @@
 
 @keyframes parallax {
     to {
-        transform: translateY(calc(var(--speed) * 100px));
+        transform: translateY(calc(var(--speed) * 101px));
     }
 }
