@@ -1,3 +1,4 @@
+import { Footer } from "~/components";
 import "./styles/frate.css";
 export default function Frate() {
   return (
@@ -48,6 +49,7 @@ export default function Frate() {
           <a class="text-white" href="https://docs.frate.dev" >check out the docs</a>
         </div>
       </div>
+      <Footer></Footer>
 
     </main>
   );
