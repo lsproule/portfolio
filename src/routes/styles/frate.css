@@ -28,6 +28,12 @@
     z-index: -10;
     filter: blur(10px);
 }
+@media (max-width: 768px) {
+
+  .para-desc{
+    --speed: 11;
+  }
+}
 
 @keyframes parallax {
     to {
