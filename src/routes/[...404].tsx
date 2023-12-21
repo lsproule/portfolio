@@ -1,4 +1,3 @@
-import { A } from "solid-start";
 
 export default function NotFound() {
   return (
@@ -18,13 +17,13 @@ export default function NotFound() {
         to learn how to build Solid apps.
       </p>
       <p class="my-4">
-        <A href="/" class="text-sky-600 hover:underline">
+        <a href="/" class="text-sky-600 hover:underline">
           Home
-        </A>
+        </a>
         {" - "}
-        <A href="/about" class="text-sky-600 hover:underline">
+        <a href="/about" class="text-sky-600 hover:underline">
           About Page
-        </A>
+        </a>
       </p>
     </main>
   );

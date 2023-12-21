@@ -1,8 +1,7 @@
 import { Container } from "./Container";
 import { createSignal, For } from "solid-js"
 import { FaSolidSuitcase } from 'solid-icons/fa'
-import { createSlider, SliderButton, SliderProvider } from "solid-slider"
-import { A } from "solid-start";
+import { createSlider } from "solid-slider"
 import { Portal } from "solid-js/web";
 
 type Project = {
@@ -56,9 +55,9 @@ const Project = ({ title, description, image, info, ...props }: Project) => {
       <div class="text-2xl my-4 mb-2 font-bold">{title}</div>
       <div class=" text-muted">{description}</div>
       <div class="my-4 ">
-        <A class="text-green-500 hover:text-green-700" href={info}>
+        <a class="text-green-500 hover:text-green-700" href={info}>
           See more
-        </A>
+        </a>
       </div>
     </div>
   )
