@@ -26,11 +26,11 @@ export default function Frate() {
         <div class="text-3xl font-bold mb-6">
           About Frate
         </div>
-        <div class="md:text-center">
+        <div class="">
           Frate is a project I have been working on to make c++ package management as easy
           as it is in other languages. It is heavily inspired by cargo, the rust package manager.
         </div>
-        <div class="md:text-center my-4">
+        <div class=" my-4">
           <div class="my-5 font-bold">Timeline</div>
           Frate is still in early development, but it has nearly 100 stars on github and is being used by some developers to simplfy their
           workflow.
