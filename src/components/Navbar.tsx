@@ -27,14 +27,14 @@ const Modal = ({ setShow }: ModalProps) => {
     <div id="modal" class="fixed top-0 modal  left-0  h-screen w-full  bg-black bg-opacity-50   z-[999]">
       <div id="modal" class="bg-neutral-800 modal right-0 fixed z-[999] text-green-500 w-2/3 h-screen">
         <div class="flex items-center justify-between p-3">
-          <a href="#hero" class="text-xl pasifico font-bold">Lucas Sproule</a>
+          <a href="/#hero" class="text-xl pasifico font-bold">Lucas Sproule</a>
           <button onClick={() => setShow(false)}>Close</button>
         </div>
         <ul class="flex flex-col items-center gap-5">
-          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="#experience">Experience</a></li>
-          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="#about">About</a></li>
-          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="#projects">Projects</a></li>
-          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="#contact">Contact Me</a></li>
+          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="/#experience">Experience</a></li>
+          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="/#about">About</a></li>
+          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="/#projects">Projects</a></li>
+          <li onClick={()=>{setShow(false)}}><a class="font-bold" href="/#contact">Contact Me</a></li>
         </ul>
       </div>
     </div>

@@ -15,7 +15,6 @@ export const Contact = () => {
               I'm currently looking for work, if you're interested in hiring me, please reach out!
             </div>
             <form action="mailto:lucas.sproule.42@gmail.com" class="flex w-full flex-col gap-4" method="post" enctype="text/plain">
-              <Input class="border w-full bg-white border-green-500 rounded-xl p-2 px-3 ml-2" variant={'default'} placeholder="test" />
               <input class="border w-full bg-white border-green-500 rounded-xl p-2 px-3 ml-2" type="text" placeholder="email" />
               <input class="border w-full bg-white border-green-500 rounded-xl p-2 px-3 ml-2" type="text" placeholder="name" />
               <textarea class="border w-full h-48  align-text-top border-green-500 rounded-xl  pt-2  px-3  ml-2" placeholder="message" />

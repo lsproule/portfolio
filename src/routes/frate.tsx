@@ -22,7 +22,7 @@ export default function Frate() {
           </div>
         </div>
       </div>
-      <div class="px-4 z-10 pt-20 bg-neutral-800 mb-20 h-auto">
+      <div class="px-4 z-10 pt-20 bg-neutral-800 mb-20 md:px-40 h-auto">
         <div class="text-3xl font-bold mb-6">
           About Frate
         </div>

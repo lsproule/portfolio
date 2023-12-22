@@ -51,12 +51,12 @@ const Project = ({ title, description, image, info, ...props }: Project) => {
           </div>
         </Portal>
       }
-      <img onClick={()=>toggleFullscreen(title)} src={image} class="w-full max-h-96 object-contain" />
+      <img onClick={()=>toggleFullscreen(title)} src={image} class="w-full hover:scale-110 max-h-96 object-contain" />
       <div class="text-2xl my-4 mb-2 font-bold">{title}</div>
       <div class=" text-muted">{description}</div>
       <div class="my-4 ">
         <a class="text-green-500 hover:text-green-700" href={info}>
-          See more
+          More Info
         </a>
       </div>
     </div>

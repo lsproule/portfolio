@@ -4,7 +4,7 @@ import { TbUser } from 'solid-icons/tb'
 
 export const About = () => {
   return (
-    <section id="about" class="lg:w-5/6 rounded-lg  mx-auto bg-neutral-800   md:mb-10">
+    <section id="about" class="lg:w-5/6 rounded-lg  mx-auto bg-neutral-900   md:mb-10">
       <Container class="h-auto  mx-auto  p-3  ">
         <div class="text-white  px-4   flex mb-8  gap-4 text-2xl font-bold"><TbUser class="text-3xl text-green-500"/>About Me</div>
         <div class="grid p-4 mx-auto  items-center justify-items-center md:grid-cols-4  gap-4 ">
