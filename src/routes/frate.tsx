@@ -3,7 +3,7 @@ import "./styles/frate.css";
 export default function Frate() {
   return (
     <main class="text-white mt-4">
-      <div class="parallax overflow-y-hidden z-0 max-h-screen">
+      <div class="parallax  z-0 max-h-screen">
         <div class="flex justify-center">
           <img src="/frate-containers.webp" class="parrallax-bg blur-sm brightness-50 lg:aspect-square -z-10 lg:hidden max-h-screen w-full object-cover" />
           <img src="/frate-containers-wide.webp" class="parrallax-bg blur-sm brightness-50 lg:aspect-square -z-10 hidden lg:block max-h-screen w-full object-cover" />
@@ -23,6 +23,9 @@ export default function Frate() {
         </div>
       </div>
       <div class="px-4 z-10 pt-20 bg-neutral-800 mb-20 h-auto">
+        <div class="text-3xl font-bold mb-6">
+          About Frate
+        </div>
         <div class="md:text-center">
           Frate is a project I have been working on to make c++ package management as easy
           as it is in other languages. It is heavily inspired by cargo, the rust package manager.
