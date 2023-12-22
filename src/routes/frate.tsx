@@ -3,7 +3,7 @@ import "./styles/frate.css";
 export default function Frate() {
   return (
     <main class="text-white mt-4">
-      <div class="parallax z-0 max-h-screen">
+      <div class="parallax overflow-y-hidden z-0 max-h-screen">
         <div class="flex justify-center">
           <img src="/frate-containers.webp" class="parrallax-bg blur-sm brightness-50 lg:aspect-square -z-10 lg:hidden max-h-screen w-full object-cover" />
           <img src="/frate-containers-wide.webp" class="parrallax-bg blur-sm brightness-50 lg:aspect-square -z-10 hidden lg:block max-h-screen w-full object-cover" />
@@ -22,31 +22,34 @@ export default function Frate() {
           </div>
         </div>
       </div>
-      <div class="px-4 z-10 pt-20 bg-neutral-800 h-screen">
-        <div class="text-center">
+      <div class="px-4 z-10 pt-20 bg-neutral-800 mb-20 h-auto">
+        <div class="md:text-center">
           Frate is a project I have been working on to make c++ package management as easy
           as it is in other languages. It is heavily inspired by cargo, the rust package manager.
         </div>
-        <div class="text-center mt-4">
+        <div class="md:text-center my-4">
+          <div class="my-5 font-bold">Timeline</div>
           Frate is still in early development, but it has nearly 100 stars on github and is being used by some developers to simplfy their
           workflow.
         </div>
+
         <div>
+          <div class="my-5 font-bold">Features</div>
           Frate is built on top of cmake with the philosophy that it should be as easy as possible to integrate into existing projects.
-          It has a powerful templating system that allows you to easily create new projects with a single command.
+          We accomplish this by having a powerful <span class="font-bold">templating system</span> that allows you to write your own callbacks in lua.
+          This allows us to do things like automatically setup the cmake build system, manage dependencies, and even run tests.
         </div>
         <div>
-          <div>some  of the features of frate include:</div>
-          <ul class="list-disc list-inside">
-            <li>automatic dependency management</li>
+          <ul class="list-disc my-4 list-inside">
+            <li>dependency management</li>
             <li>automatic compilation</li>
             <li>automatic testing</li>
-            <li>painless cross platform compilation</li>
+            <li>cross platform compilation</li>
             <li>automatic packaging</li>
           </ul>
         </div>
         <div class="flex justify-center">
-          <a class="text-white" href="https://docs.frate.dev" >check out the docs</a>
+          <a class="text-green-500 my-20 font-bold" href="https://docs.frate.dev" >Check out the Docs</a>
         </div>
       </div>
       <Footer></Footer>
