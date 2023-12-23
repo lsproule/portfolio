@@ -1,11 +1,13 @@
 import { Container } from "./Container";
 import { FaSolidSuitcase } from 'solid-icons/fa'
 import { Input } from "~/Library";
-
+import CalendlyWidget from "./Calendly";
 export const Contact = () => {
   return (
     <section id="contact" class="mb-8  p-3 ">
-      <Container class="  ">
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></link>
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <Container class="">
         <div class="flex   justify-center">
           <div class="flex p-4 mb-8 rounded-lg  w-full text-black md:w-1/2 lg:w-1/3 bg-neutral-800  flex-col mt-12 gap-4 items-center  justify-center text-xl font-bold  ">
             <div class="flex items-center text-white mt-4 justify-center text-2xl font-bold mb-3 ">
@@ -21,6 +23,10 @@ export const Contact = () => {
               <button class="border bg-green-500 text-neutral-800 border-green-500 rounded-xl p-2 px-3 ml-2">Send</button>
             </form>
           </div>
+        </div>
+        <div class="text-green-500 flex flex-col items-center">
+          <div class="text-white">need to talk sooner</div>
+          <CalendlyWidget></CalendlyWidget>
         </div>
       </Container>
     </section>
