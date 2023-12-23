@@ -4,6 +4,7 @@ import {
   About,
   Experience,
   Projects,
+  Background,
   Contact
 } from "~/components";
 
@@ -13,6 +14,7 @@ import {
 export default function Home() {
   return (
     <main class="  text-white">
+      <Background />
       <Hero />
       <Experience />
       <About />

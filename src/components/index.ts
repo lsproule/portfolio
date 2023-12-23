@@ -1,6 +1,7 @@
 export * from "./Navbar";
 export * from "./Hero";
 export * from "./About";
+export * from "./background";
 export * from "./Projects";
 export * from "./Experience";
 export * from "./Footer";
