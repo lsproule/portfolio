@@ -28,21 +28,21 @@ const projects = [
     info: "/frate"
   },
   {
-    title: "Embedding Neovim into the browser",
-    description: "I wanted to practice with file descriptors and websockets, so I built this project to pass stdio through a socket. I built it with javascript and python. I isolated my neovim with docker to build the user interface",
+    title: "Nvim in the browser",
+    description: "I used file descriptors and websockets to embed neovim in the browser. I isolated my neovim with docker to build the user interface",
     image: "/nvim.png",
     info: "/nvim"
   },
   {
-    title: "Open Source Contributor to astronvim",
-    description: "I am a contributor to the astronvim project, which is a neovim distribution that is built with lua. I have contributed to the project by adding a new plugin, and fixing bugs.",
+    title: "Contributor to astronvim",
+    description: "I contributed to the astronvim project, which is a neovim distribution that is built with lua. I contributed to the project by helping with the C++ lsp and fixing bugs.",
     image: "/astro.png",
     info: "/astro"
   },
 ]
 const Project = ({ title, description, image, info, ...props }: Project) => {
   return (
-    <div  class={`slide flex flex-col justify-around  p-2 pt-5 shadow-md shadow-neutral-900 z-0  bg-neutral-800  text-center rounded-xl  ${props.class}`}>
+    <div  class={`slide flex flex-col justify-around   p-2 pt-5 shadow-md shadow-neutral-900 z-0  bg-neutral-800  text-center rounded-xl  ${props.class}`}>
 
       {isProjectFullscreen(title) && 
         <Portal target={document.querySelector("body")}>
@@ -51,7 +51,9 @@ const Project = ({ title, description, image, info, ...props }: Project) => {
           </div>
         </Portal>
       }
-      <img onClick={()=>toggleFullscreen(title)} src={image} class="w-full  max-h-96 object-contain" />
+      <div class="flex justify-center">
+      <img onClick={()=>toggleFullscreen(title)} src={image} class="sm:max-h-48" />
+      </div>
       <div class="text-2xl my-4 mb-2 font-bold">{title}</div>
       <div class=" text-muted">{description}</div>
       <div class="my-4 ">
